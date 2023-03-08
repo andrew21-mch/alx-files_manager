@@ -1,10 +1,10 @@
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable no-unused-vars */
 import sha1 from 'sha1';
-import { Request } from 'express';
-import mongoDBCore from 'mongodb/lib/core';
-import dbClient from './db';
-import redisClient from './redis';
+import  Request  from 'express';
+import mongoDBCore from 'mongodb/lib/core/index.js';
+import dbClient from './db.js';
+import redisClient from './redis.js';
 
 /**
  * Fetches the user from the Authorization header in the given request object.

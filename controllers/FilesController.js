@@ -2,17 +2,17 @@
 /* eslint-disable no-unused-vars */
 import { tmpdir } from 'os';
 import { promisify } from 'util';
-import Queue from 'bull/lib/queue';
+import Queue from 'bull/lib/queue.js';
 import { v4 as uuidv4 } from 'uuid';
 import {
   mkdir, writeFile, stat, existsSync, realpath,
 } from 'fs';
 import { join as joinPath } from 'path';
-import { Request, Response } from 'express';
+import  Response from 'express';
 import { contentType } from 'mime-types';
-import mongoDBCore from 'mongodb/lib/core';
-import dbClient from '../utils/db';
-import { getUserFromXToken } from '../utils/auth';
+import mongoDBCore from 'mongodb/lib/core/index.js';
+import dbClient from '../utils/db.js';
+import { getUserFromXToken } from '../utils/auth.js';
 
 const VALID_FILE_TYPES = {
   folder: 'folder',
