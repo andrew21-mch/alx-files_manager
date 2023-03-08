@@ -8,7 +8,7 @@ import {
   mkdir, writeFile, stat, existsSync, realpath,
 } from 'fs';
 import { join as joinPath } from 'path';
-import  Response from 'express';
+import Response from 'express';
 import { contentType } from 'mime-types';
 import mongoDBCore from 'mongodb/lib/core/index.js';
 import dbClient from '../utils/db.js';

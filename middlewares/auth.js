@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
-import  NextFunction  from 'express';
-import  Response  from 'express';
-import  Request  from 'express';
+import NextFunction from 'express';
+import Response from 'express';
+import Request from 'express';
 import { getUserFromXToken, getUserFromAuthorization } from '../utils/auth.js';
 
 /**
